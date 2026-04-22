@@ -1,0 +1,9 @@
+C:/Users/a.faizullin/Documents/ApplicationForSTM/build/CMakeFiles/ApplicationForSTM.dir
+C:/Users/a.faizullin/Documents/ApplicationForSTM/build/CMakeFiles/edit_cache.dir
+C:/Users/a.faizullin/Documents/ApplicationForSTM/build/CMakeFiles/rebuild_cache.dir
+C:/Users/a.faizullin/Documents/ApplicationForSTM/build/CMakeFiles/list_install_components.dir
+C:/Users/a.faizullin/Documents/ApplicationForSTM/build/CMakeFiles/install.dir
+C:/Users/a.faizullin/Documents/ApplicationForSTM/build/CMakeFiles/install/local.dir
+C:/Users/a.faizullin/Documents/ApplicationForSTM/build/CMakeFiles/install/strip.dir
+C:/Users/a.faizullin/Documents/ApplicationForSTM/build/CMakeFiles/ApplicationForSTM_autogen_timestamp_deps.dir
+C:/Users/a.faizullin/Documents/ApplicationForSTM/build/CMakeFiles/ApplicationForSTM_autogen.dir
