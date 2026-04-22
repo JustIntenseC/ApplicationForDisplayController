@@ -29,6 +29,8 @@ private:
     Ui::MainWindow *ui;
     QSerialPort* serial;
     bool isPortOpen;
+    QByteArray m_loadedFileData;
+    QString m_currentFileName;
 
 private slots:
     void refreshPorts();

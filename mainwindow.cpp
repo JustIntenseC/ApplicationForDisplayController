@@ -76,7 +76,7 @@ void MainWindow::togglePort(){
 
 
 void MainWindow::on_actionOpenBinaryFile_triggered(){
-    QString fileName = QFileDialog::getOpenFileName(
+     QString fileName = QFileDialog::getOpenFileName(
         this,
         "Выберите бинарный файл",
         QDir::homePath(),
@@ -96,6 +96,35 @@ void MainWindow::on_actionOpenBinaryFile_triggered(){
         return;
     }
 
-   
+    // Читаем данные
+    m_loadedFileData = file.readAll();
+    file.close();
 
+    if (m_loadedFileData.isEmpty()) {
+        QMessageBox::warning(this, "Внимание", "Файл пуст!");
+        m_currentFileName = "Файл не выбран";
+        // updateFileInfoDisplay();
+        statusBar()->showMessage("Файл пуст", 3000);
+        return;
+    }
+
+    // Сохраняем имя файла (только имя, без пути)
+    QFileInfo fileInfo(fileName);
+    m_currentFileName = fileInfo.fileName();
+    
+    // Обновляем UI
+    // updateFileInfoDisplay();
+    
+    // Включаем пункт меню "Закрыть файл"
+    // ui->actionCloseFile->setEnabled(true);
+    
+    // Сообщение в статус-бар
+    statusBar()->showMessage(QString("Загружен файл: %1 (%2 байт)")
+        .arg(m_currentFileName)
+        .arg(m_loadedFileData.size()), 5000);
+    
+    // Логирование (если есть лог-виджет)
+    QString logMsg = QString("[OK] Загружен файл: %1, размер: %2 байт")
+        .arg(m_currentFileName)
+        .arg(m_loadedFileData.size());
 }
