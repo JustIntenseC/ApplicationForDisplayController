@@ -157,9 +157,9 @@
     <widget class="QProgressBar" name="progressBar">
      <property name="geometry">
       <rect>
-       <x>570</x>
-       <y>50</y>
-       <width>118</width>
+       <x>160</x>
+       <y>150</y>
+       <width>311</width>
        <height>23</height>
       </rect>
      </property>
@@ -170,8 +170,8 @@
     <widget class="QLabel" name="labelProgressBytes">
      <property name="geometry">
       <rect>
-       <x>570</x>
-       <y>80</y>
+       <x>20</x>
+       <y>150</y>
        <width>121</width>
        <height>20</height>
       </rect>

@@ -96,11 +96,11 @@ public:
         textLogs->setGeometry(QRect(160, 19, 311, 121));
         progressBar = new QProgressBar(widget);
         progressBar->setObjectName("progressBar");
-        progressBar->setGeometry(QRect(570, 50, 118, 23));
+        progressBar->setGeometry(QRect(160, 150, 311, 23));
         progressBar->setValue(24);
         labelProgressBytes = new QLabel(widget);
         labelProgressBytes->setObjectName("labelProgressBytes");
-        labelProgressBytes->setGeometry(QRect(570, 80, 121, 20));
+        labelProgressBytes->setGeometry(QRect(20, 150, 121, 20));
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName("menubar");
