@@ -18,9 +18,9 @@
     <property name="geometry">
      <rect>
       <x>0</x>
-      <y>10</y>
-      <width>471</width>
-      <height>151</height>
+      <y>0</y>
+      <width>791</width>
+      <height>581</height>
      </rect>
     </property>
     <widget class="QPushButton" name="connectToPort">
@@ -36,7 +36,7 @@
       <string>Подключиться</string>
      </property>
     </widget>
-    <widget class="QLabel" name="label">
+    <widget class="QLabel" name="labelStatus">
      <property name="geometry">
       <rect>
        <x>20</x>
@@ -59,7 +59,7 @@
       </rect>
      </property>
     </widget>
-    <widget class="QLabel" name="label_2">
+    <widget class="QLabel" name="labelIndicate">
      <property name="geometry">
       <rect>
        <x>20</x>
@@ -95,7 +95,7 @@
     <widget class="QPushButton" name="buttonLoad">
      <property name="geometry">
       <rect>
-       <x>370</x>
+       <x>480</x>
        <y>50</y>
        <width>80</width>
        <height>24</height>
@@ -108,7 +108,7 @@
     <widget class="QPushButton" name="buttonStart">
      <property name="geometry">
       <rect>
-       <x>370</x>
+       <x>480</x>
        <y>80</y>
        <width>80</width>
        <height>24</height>
@@ -118,10 +118,10 @@
       <string>START</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton_3">
+    <widget class="QPushButton" name="buttonEnd">
      <property name="geometry">
       <rect>
-       <x>370</x>
+       <x>480</x>
        <y>110</y>
        <width>80</width>
        <height>24</height>
@@ -134,7 +134,7 @@
     <widget class="QLineEdit" name="lineEdit">
      <property name="geometry">
       <rect>
-       <x>370</x>
+       <x>480</x>
        <y>20</y>
        <width>81</width>
        <height>24</height>
@@ -144,17 +144,40 @@
       <string> Управление</string>
      </property>
     </widget>
-    <widget class="QLabel" name="label_3">
+    <widget class="QTextEdit" name="textLogs">
      <property name="geometry">
       <rect>
-       <x>180</x>
-       <y>60</y>
-       <width>49</width>
-       <height>16</height>
+       <x>160</x>
+       <y>19</y>
+       <width>311</width>
+       <height>121</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QProgressBar" name="progressBar">
+     <property name="geometry">
+      <rect>
+       <x>570</x>
+       <y>50</y>
+       <width>118</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="value">
+      <number>24</number>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelProgressBytes">
+     <property name="geometry">
+      <rect>
+       <x>570</x>
+       <y>80</y>
+       <width>121</width>
+       <height>20</height>
       </rect>
      </property>
      <property name="text">
-      <string/>
+      <string>TextLabel</string>
      </property>
     </widget>
    </widget>

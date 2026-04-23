@@ -18,8 +18,10 @@
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenu>
 #include <QtWidgets/QMenuBar>
+#include <QtWidgets/QProgressBar>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QStatusBar>
+#include <QtWidgets/QTextEdit>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -31,16 +33,18 @@ public:
     QWidget *centralwidget;
     QWidget *widget;
     QPushButton *connectToPort;
-    QLabel *label;
+    QLabel *labelStatus;
     QComboBox *comboBox;
-    QLabel *label_2;
+    QLabel *labelIndicate;
     QLineEdit *lineStatus;
     QLineEdit *lineIndicate;
     QPushButton *buttonLoad;
     QPushButton *buttonStart;
-    QPushButton *pushButton_3;
+    QPushButton *buttonEnd;
     QLineEdit *lineEdit;
-    QLabel *label_3;
+    QTextEdit *textLogs;
+    QProgressBar *progressBar;
+    QLabel *labelProgressBytes;
     QMenuBar *menubar;
     QMenu *menu;
     QStatusBar *statusbar;
@@ -56,19 +60,19 @@ public:
         centralwidget->setObjectName("centralwidget");
         widget = new QWidget(centralwidget);
         widget->setObjectName("widget");
-        widget->setGeometry(QRect(0, 10, 471, 151));
+        widget->setGeometry(QRect(0, 0, 791, 581));
         connectToPort = new QPushButton(widget);
         connectToPort->setObjectName("connectToPort");
         connectToPort->setGeometry(QRect(20, 80, 121, 24));
-        label = new QLabel(widget);
-        label->setObjectName("label");
-        label->setGeometry(QRect(20, 20, 51, 16));
+        labelStatus = new QLabel(widget);
+        labelStatus->setObjectName("labelStatus");
+        labelStatus->setGeometry(QRect(20, 20, 51, 16));
         comboBox = new QComboBox(widget);
         comboBox->setObjectName("comboBox");
         comboBox->setGeometry(QRect(20, 50, 121, 24));
-        label_2 = new QLabel(widget);
-        label_2->setObjectName("label_2");
-        label_2->setGeometry(QRect(20, 120, 71, 16));
+        labelIndicate = new QLabel(widget);
+        labelIndicate->setObjectName("labelIndicate");
+        labelIndicate->setGeometry(QRect(20, 120, 71, 16));
         lineStatus = new QLineEdit(widget);
         lineStatus->setObjectName("lineStatus");
         lineStatus->setGeometry(QRect(60, 20, 81, 21));
@@ -77,19 +81,26 @@ public:
         lineIndicate->setGeometry(QRect(90, 120, 51, 20));
         buttonLoad = new QPushButton(widget);
         buttonLoad->setObjectName("buttonLoad");
-        buttonLoad->setGeometry(QRect(370, 50, 80, 24));
+        buttonLoad->setGeometry(QRect(480, 50, 80, 24));
         buttonStart = new QPushButton(widget);
         buttonStart->setObjectName("buttonStart");
-        buttonStart->setGeometry(QRect(370, 80, 80, 24));
-        pushButton_3 = new QPushButton(widget);
-        pushButton_3->setObjectName("pushButton_3");
-        pushButton_3->setGeometry(QRect(370, 110, 80, 24));
+        buttonStart->setGeometry(QRect(480, 80, 80, 24));
+        buttonEnd = new QPushButton(widget);
+        buttonEnd->setObjectName("buttonEnd");
+        buttonEnd->setGeometry(QRect(480, 110, 80, 24));
         lineEdit = new QLineEdit(widget);
         lineEdit->setObjectName("lineEdit");
-        lineEdit->setGeometry(QRect(370, 20, 81, 24));
-        label_3 = new QLabel(widget);
-        label_3->setObjectName("label_3");
-        label_3->setGeometry(QRect(180, 60, 49, 16));
+        lineEdit->setGeometry(QRect(480, 20, 81, 24));
+        textLogs = new QTextEdit(widget);
+        textLogs->setObjectName("textLogs");
+        textLogs->setGeometry(QRect(160, 19, 311, 121));
+        progressBar = new QProgressBar(widget);
+        progressBar->setObjectName("progressBar");
+        progressBar->setGeometry(QRect(570, 50, 118, 23));
+        progressBar->setValue(24);
+        labelProgressBytes = new QLabel(widget);
+        labelProgressBytes->setObjectName("labelProgressBytes");
+        labelProgressBytes->setGeometry(QRect(570, 80, 121, 20));
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName("menubar");
@@ -114,13 +125,13 @@ public:
         MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "MainWindow", nullptr));
         DownloadBin->setText(QCoreApplication::translate("MainWindow", "\320\227\320\260\320\263\321\200\321\203\320\267\320\270\321\202\321\214 \320\261\320\270\320\275\320\260\321\200\320\275\321\213\320\271 \321\204\320\260\320\271\320\273", nullptr));
         connectToPort->setText(QCoreApplication::translate("MainWindow", "\320\237\320\276\320\264\320\272\320\273\321\216\321\207\320\270\321\202\321\214\321\201\321\217", nullptr));
-        label->setText(QCoreApplication::translate("MainWindow", "\320\241\321\202\320\260\321\202\321\203\321\201:", nullptr));
-        label_2->setText(QCoreApplication::translate("MainWindow", "\320\230\320\275\320\264\320\270\320\272\320\260\321\202\320\276\321\200:", nullptr));
+        labelStatus->setText(QCoreApplication::translate("MainWindow", "\320\241\321\202\320\260\321\202\321\203\321\201:", nullptr));
+        labelIndicate->setText(QCoreApplication::translate("MainWindow", "\320\230\320\275\320\264\320\270\320\272\320\260\321\202\320\276\321\200:", nullptr));
         buttonLoad->setText(QCoreApplication::translate("MainWindow", "LOAD", nullptr));
         buttonStart->setText(QCoreApplication::translate("MainWindow", "START", nullptr));
-        pushButton_3->setText(QCoreApplication::translate("MainWindow", "END", nullptr));
+        buttonEnd->setText(QCoreApplication::translate("MainWindow", "END", nullptr));
         lineEdit->setText(QCoreApplication::translate("MainWindow", " \320\243\320\277\321\200\320\260\320\262\320\273\320\265\320\275\320\270\320\265", nullptr));
-        label_3->setText(QString());
+        labelProgressBytes->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
         menu->setTitle(QCoreApplication::translate("MainWindow", "\320\244\320\260\320\271\320\273", nullptr));
     } // retranslateUi
 

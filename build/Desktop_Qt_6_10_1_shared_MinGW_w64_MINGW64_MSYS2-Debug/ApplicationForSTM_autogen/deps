@@ -208,6 +208,7 @@ ApplicationForSTM_autogen/timestamp: \
 	C:/msys64/mingw64/include/pthread_unistd.h \
 	C:/msys64/mingw64/include/qt6/QtCore/QFile \
 	C:/msys64/mingw64/include/qt6/QtCore/QFileInfo \
+	C:/msys64/mingw64/include/qt6/QtCore/QTimer \
 	C:/msys64/mingw64/include/qt6/QtCore/q17memory.h \
 	C:/msys64/mingw64/include/qt6/QtCore/q20functional.h \
 	C:/msys64/mingw64/include/qt6/QtCore/q20iterator.h \
@@ -216,6 +217,7 @@ ApplicationForSTM_autogen/timestamp: \
 	C:/msys64/mingw64/include/qt6/QtCore/q20utility.h \
 	C:/msys64/mingw64/include/qt6/QtCore/q23type_traits.h \
 	C:/msys64/mingw64/include/qt6/QtCore/q23utility.h \
+	C:/msys64/mingw64/include/qt6/QtCore/qabstracteventdispatcher.h \
 	C:/msys64/mingw64/include/qt6/QtCore/qalgorithms.h \
 	C:/msys64/mingw64/include/qt6/QtCore/qalloc.h \
 	C:/msys64/mingw64/include/qt6/QtCore/qanystringview.h \
@@ -226,6 +228,7 @@ ApplicationForSTM_autogen/timestamp: \
 	C:/msys64/mingw64/include/qt6/QtCore/qatomic.h \
 	C:/msys64/mingw64/include/qt6/QtCore/qatomic_cxx11.h \
 	C:/msys64/mingw64/include/qt6/QtCore/qbasicatomic.h \
+	C:/msys64/mingw64/include/qt6/QtCore/qbasictimer.h \
 	C:/msys64/mingw64/include/qt6/QtCore/qbindingstorage.h \
 	C:/msys64/mingw64/include/qt6/QtCore/qbytearray.h \
 	C:/msys64/mingw64/include/qt6/QtCore/qbytearrayalgorithms.h \
@@ -247,10 +250,12 @@ ApplicationForSTM_autogen/timestamp: \
 	C:/msys64/mingw64/include/qt6/QtCore/qdarwinhelpers.h \
 	C:/msys64/mingw64/include/qt6/QtCore/qdatastream.h \
 	C:/msys64/mingw64/include/qt6/QtCore/qdatetime.h \
+	C:/msys64/mingw64/include/qt6/QtCore/qdeadlinetimer.h \
 	C:/msys64/mingw64/include/qt6/QtCore/qdebug.h \
 	C:/msys64/mingw64/include/qt6/QtCore/qdir.h \
 	C:/msys64/mingw64/include/qt6/QtCore/qdirlisting.h \
 	C:/msys64/mingw64/include/qt6/QtCore/qendian.h \
+	C:/msys64/mingw64/include/qt6/QtCore/qeventloop.h \
 	C:/msys64/mingw64/include/qt6/QtCore/qexceptionhandling.h \
 	C:/msys64/mingw64/include/qt6/QtCore/qfile.h \
 	C:/msys64/mingw64/include/qt6/QtCore/qfiledevice.h \
@@ -330,6 +335,7 @@ ApplicationForSTM_autogen/timestamp: \
 	C:/msys64/mingw64/include/qt6/QtCore/qtenvironmentvariables.h \
 	C:/msys64/mingw64/include/qt6/QtCore/qtextstream.h \
 	C:/msys64/mingw64/include/qt6/QtCore/qtformat_impl.h \
+	C:/msys64/mingw64/include/qt6/QtCore/qtimer.h \
 	C:/msys64/mingw64/include/qt6/QtCore/qtimezone.h \
 	C:/msys64/mingw64/include/qt6/QtCore/qtmetamacros.h \
 	C:/msys64/mingw64/include/qt6/QtCore/qtnoop.h \

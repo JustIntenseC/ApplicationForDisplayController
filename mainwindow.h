@@ -11,6 +11,7 @@
 #include <QFileInfo>
 #include <QMessageBox>
 #include <QStatusBar>
+#include <QTimer>
 QT_BEGIN_NAMESPACE
 namespace Ui {
 class MainWindow;
@@ -32,9 +33,20 @@ private:
     QByteArray m_loadedFileData;
     QString m_currentFileName;
 
+    QByteArray m_sendBuffer;       
+    qint64 m_bytesSent;            
+    qint64 m_totalBytes;          
+    bool m_isSending;  
+
 private slots:
     void refreshPorts();
     void togglePort();
     void on_actionOpenBinaryFile_triggered();
+    void buttonLoad();
+    void startSendingFile();
+    void buttonStart();
+    void buttonEnd();
+    void sendChunk();
+    void onBytesWritten(qint64);
 };
 #endif // MAINWINDOW_H
